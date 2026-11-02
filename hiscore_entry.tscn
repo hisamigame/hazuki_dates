@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://rkxopjpabnkg"]
+
+[ext_resource type="Script" uid="uid://dmak77hkj6gji" path="res://hiscore_entry.gd" id="1_4kajy"]
+
+[node name="HSplitContainer1" type="HSplitContainer" unique_id=894732128]
+offset_right = 124.0
+offset_bottom = 9.0
+script = ExtResource("1_4kajy")
+
+[node name="Name" type="Label" parent="." unique_id=996809149]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "EVE"
+
+[node name="Score" type="Label" parent="." unique_id=131898966]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "100000"
+horizontal_alignment = 2

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b7p4wgw1kceyg"]
+
+[ext_resource type="Script" uid="uid://c5ykeh55fpug4" path="res://clothing_containers.gd" id="1_0qmlw"]
+
+[node name="ClothingContainer" type="GridContainer" unique_id=1795477348]
+offset_left = 342.0
+offset_top = 97.0
+offset_right = 799.0
+offset_bottom = 249.0
+theme_override_constants/h_separation = 110
+theme_override_constants/v_separation = 160
+columns = 4
+script = ExtResource("1_0qmlw")
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]

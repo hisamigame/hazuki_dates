@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://c5v7cwck7km3b"]
+
+[ext_resource type="Script" uid="uid://da2pj6e18vg44" path="res://game_window.gd" id="1_7quu7"]
+[ext_resource type="Texture2D" uid="uid://cwti2biuyfc2y" path="res://pub_bg.png" id="1_h0jfx"]
+[ext_resource type="PackedScene" uid="uid://dnkqdmyiiabu5" path="res://hazuki.tscn" id="1_q0rpe"]
+[ext_resource type="Texture2D" uid="uid://b0os287flapyk" path="res://table.png" id="2_h0jfx"]
+[ext_resource type="PackedScene" uid="uid://qbjqx3wvdpon" path="res://memory_game.tscn" id="2_kradc"]
+[ext_resource type="PackedScene" uid="uid://bqpcc4k3qmo1n" path="res://ui.tscn" id="5_244b4"]
+[ext_resource type="AudioStream" uid="uid://biln0h5u3fs8g" path="res://doorbell.wav" id="8_7dl3i"]
+
+[node name="GameWindow" type="Node2D" unique_id=1883753306]
+script = ExtResource("1_7quu7")
+
+[node name="BG" type="TextureRect" parent="." unique_id=706238730]
+modulate = Color(0.6706895, 0.6706895, 0.6706895, 1)
+offset_left = -1071.0
+offset_right = 1043.0
+offset_bottom = 1024.0
+texture = ExtResource("1_h0jfx")
+
+[node name="Hazuki" parent="." unique_id=1576849441 instance=ExtResource("1_q0rpe")]
+modulate = Color(0.69965345, 0.69965345, 0.69965345, 1)
+position = Vector2(0, 220)
+
+[node name="FG" type="Sprite2D" parent="." unique_id=193591088]
+modulate = Color(0.57700837, 0.5770084, 0.57700837, 1)
+position = Vector2(512, 516)
+texture = ExtResource("2_h0jfx")
+
+[node name="UI" parent="." unique_id=1488068749 instance=ExtResource("5_244b4")]
+
+[node name="MemoryGame" parent="." unique_id=703827124 instance=ExtResource("2_kradc")]
+visible = false
+offset_left = 160.0
+offset_top = 160.0
+offset_right = 839.0
+offset_bottom = 160.0
+
+[node name="Correct" type="AudioStreamPlayer" parent="." unique_id=1051200448]
+stream = ExtResource("8_7dl3i")
+bus = &"SE"

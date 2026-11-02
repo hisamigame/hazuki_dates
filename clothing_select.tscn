@@ -1,0 +1,300 @@
+[gd_scene format=3 uid="uid://bx7j6pnw1xv4q"]
+
+[ext_resource type="Script" uid="uid://cuqxqqwt2y4hk" path="res://clothing_select.gd" id="1_gabce"]
+[ext_resource type="PackedScene" uid="uid://b7p4wgw1kceyg" path="res://clothing_container.tscn" id="2_gabce"]
+[ext_resource type="PackedScene" uid="uid://24j7qp71k4x8" path="res://clothes.tscn" id="3_0ron4"]
+[ext_resource type="Texture2D" uid="uid://idw1gwbiltds" path="res://indicator.png" id="4_gabce"]
+[ext_resource type="Texture2D" uid="uid://dsppr7dha46cm" path="res://baseball_cap.png" id="4_yjkr7"]
+[ext_resource type="Texture2D" uid="uid://b4067ecxhbvrw" path="res://sunglasses.png" id="5_dh274"]
+[ext_resource type="Texture2D" uid="uid://4ltbbf2xceec" path="res://tophat.png" id="6_dh274"]
+[ext_resource type="Texture2D" uid="uid://efbnf5uw5c2r" path="res://sweater.png" id="7_0edd7"]
+[ext_resource type="Texture2D" uid="uid://7scf7um1vuvc" path="res://tshirt_black.png" id="7_suirq"]
+[ext_resource type="Texture2D" uid="uid://6x2h8fqxdfa3" path="res://suit_jacket.png" id="8_d7t74"]
+[ext_resource type="Texture2D" uid="uid://dcysrhsxifqu2" path="res://tshirt_white.png" id="8_r4uq8"]
+[ext_resource type="Texture2D" uid="uid://djue66rm4nw8g" path="res://jeans.png" id="9_d7t74"]
+[ext_resource type="Texture2D" uid="uid://deoq7fk6jejye" path="res://skirt.png" id="9_ns0ut"]
+[ext_resource type="Texture2D" uid="uid://bstd4jkqgl3m2" path="res://suit_trousers.png" id="10_06lg0"]
+[ext_resource type="Texture2D" uid="uid://dxru5b3cplywy" path="res://shorts.png" id="10_ns0ut"]
+[ext_resource type="Texture2D" uid="uid://cskbstr1hc0tk" path="res://sneakers.png" id="11_3j1br"]
+[ext_resource type="Texture2D" uid="uid://d3ntywlkosgp7" path="res://sandals.png" id="12_y8eyh"]
+[ext_resource type="Texture2D" uid="uid://bw5d70n3636s8" path="res://dress_shoes.png" id="13_suirq"]
+[ext_resource type="Texture2D" uid="uid://dggd7pngop5vt" path="res://arrow.png" id="17_3j1br"]
+[ext_resource type="Script" uid="uid://tfd0ntwdmtnp" path="res://arrow_anim2.gd" id="18_3j1br"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ns0ut"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.4351923, 0.43519226, 0.43519226, 0.7058824)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gabce"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[node name="ClothingSelect" type="Control" unique_id=703827124]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 679.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gabce")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1270115290]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 874.0
+offset_bottom = 895.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.6431373)
+
+[node name="Image" type="TextureRect" parent="." unique_id=1456539467]
+clip_contents = true
+layout_mode = 0
+offset_left = 29.0
+offset_top = 118.0
+offset_right = 341.0
+offset_bottom = 561.895
+mouse_filter = 2
+expand_mode = 1
+
+[node name="ClothingContainer1" parent="." unique_id=1795477348 instance=ExtResource("2_gabce")]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 91.0
+offset_right = 837.0
+offset_bottom = 243.0
+mouse_filter = 2
+
+[node name="Clothes1" parent="ClothingContainer1" unique_id=139961683 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Clothes4")
+mouse_filter = 2
+description = "Bare head"
+
+[node name="Clothes2" parent="ClothingContainer1" unique_id=803404816 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+mouse_filter = 2
+description = "Baseball cap"
+image = ExtResource("4_yjkr7")
+score = -10
+
+[node name="Clothes3" parent="ClothingContainer1" unique_id=956934394 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+mouse_filter = 2
+description = "Sunglasses
+"
+image = ExtResource("5_dh274")
+
+[node name="Clothes4" parent="ClothingContainer1" unique_id=2146208527 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+focus_neighbor_right = NodePath("../Clothes1")
+mouse_filter = 2
+description = "Tophat"
+image = ExtResource("6_dh274")
+score = -10
+
+[node name="ClothingContainer2" parent="." unique_id=1435644292 instance=ExtResource("2_gabce")]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 276.0
+offset_right = 837.0
+offset_bottom = 428.0
+mouse_filter = 2
+
+[node name="Clothes1" parent="ClothingContainer2" unique_id=1155787438 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Clothes4")
+mouse_filter = 2
+description = "T-shirt (black)"
+image = ExtResource("7_suirq")
+type = "torso"
+score = -10
+
+[node name="Clothes2" parent="ClothingContainer2" unique_id=1062132019 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+mouse_filter = 2
+description = "T-shirt (white)"
+image = ExtResource("8_r4uq8")
+type = "torso"
+
+[node name="Clothes3" parent="ClothingContainer2" unique_id=673520379 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+mouse_filter = 2
+description = "Sweater"
+image = ExtResource("7_0edd7")
+type = "torso"
+score = -10
+
+[node name="Clothes4" parent="ClothingContainer2" unique_id=1766490372 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+focus_neighbor_right = NodePath("../Clothes1")
+mouse_filter = 2
+description = "Suit Jacket"
+image = ExtResource("8_d7t74")
+type = "torso"
+score = -1
+
+[node name="ClothingContainer3" parent="." unique_id=266896060 instance=ExtResource("2_gabce")]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 453.0
+offset_right = 837.0
+offset_bottom = 605.0
+mouse_filter = 2
+
+[node name="Clothes1" parent="ClothingContainer3" unique_id=1855981513 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Clothes4")
+mouse_filter = 2
+description = "Jeans"
+image = ExtResource("9_d7t74")
+type = "waist"
+
+[node name="Clothes2" parent="ClothingContainer3" unique_id=2081392463 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+mouse_filter = 2
+description = "Shorts"
+image = ExtResource("10_ns0ut")
+type = "waist"
+score = -10
+
+[node name="Clothes3" parent="ClothingContainer3" unique_id=1218834066 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+mouse_filter = 2
+description = "Skirt"
+image = ExtResource("9_ns0ut")
+type = "waist"
+
+[node name="Clothes4" parent="ClothingContainer3" unique_id=2123769020 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+focus_neighbor_right = NodePath("../Clothes1")
+mouse_filter = 2
+description = "Suit pants"
+image = ExtResource("10_06lg0")
+type = "waist"
+score = -1
+
+[node name="ClothingContainer4" parent="." unique_id=1370754476 instance=ExtResource("2_gabce")]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 630.0
+offset_right = 837.0
+offset_bottom = 782.0
+mouse_filter = 2
+
+[node name="Clothes1" parent="ClothingContainer4" unique_id=2093677432 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+focus_neighbor_left = NodePath("../Clothes4")
+mouse_filter = 2
+description = "Bare feet"
+type = "feet"
+score = -10
+
+[node name="Clothes2" parent="ClothingContainer4" unique_id=1269820122 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+mouse_filter = 2
+description = "Sneakers"
+image = ExtResource("11_3j1br")
+type = "feet"
+
+[node name="Clothes3" parent="ClothingContainer4" unique_id=670998143 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+mouse_filter = 2
+description = "Sandals"
+image = ExtResource("12_y8eyh")
+type = "feet"
+score = -10
+
+[node name="Clothes4" parent="ClothingContainer4" unique_id=791083170 instance=ExtResource("3_0ron4")]
+layout_mode = 2
+focus_neighbor_right = NodePath("../Clothes1")
+mouse_filter = 2
+description = "Dress shoes"
+image = ExtResource("13_suirq")
+type = "feet"
+score = -1
+
+[node name="Button" type="Button" parent="." unique_id=1959283283]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 784.0
+offset_right = 746.0
+offset_bottom = 880.0
+focus_neighbor_right = NodePath("../ClothingContainer4/Clothes4")
+mouse_filter = 2
+theme_override_font_sizes/font_size = 64
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ns0ut")
+theme_override_styles/focus = SubResource("StyleBoxFlat_gabce")
+disabled = true
+action_mode = 0
+button_mask = 0
+shortcut_feedback = false
+shortcut_in_tooltip = false
+text = "GO DATE"
+
+[node name="Indicator" type="Sprite2D" parent="." unique_id=498368514]
+position = Vector2(-355, 804)
+scale = Vector2(0.146, 0.146)
+texture = ExtResource("4_gabce")
+centered = false
+
+[node name="Arrow2" type="Sprite2D" parent="." unique_id=2061011966]
+position = Vector2(436, 835)
+rotation = 1.5707964
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("17_3j1br")
+script = ExtResource("18_3j1br")
+
+[node name="Arrow3" type="Sprite2D" parent="." unique_id=250082852]
+position = Vector2(773, 835)
+rotation = 1.5707964
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("17_3j1br")
+flip_v = true
+script = ExtResource("18_3j1br")
+
+[node name="Label" type="Label" parent="." unique_id=1883286115]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 626.0
+offset_right = 347.0
+offset_bottom = 771.0
+theme_override_font_sizes/font_size = 32
+text = "We like this sdasfdfdfdsdfdfdfdfdf"
+autowrap_mode = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2003147469]
+layout_mode = 0
+offset_left = 139.0
+offset_top = -6.0
+offset_right = 1010.0
+offset_bottom = 85.0
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[wave amp=10.0 freq=5.0 connected=1][center]Choose your attire[/center][/wave]"

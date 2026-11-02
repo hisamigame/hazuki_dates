@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://24j7qp71k4x8"]
+
+[ext_resource type="Script" uid="uid://jjcetrcw6n8h" path="res://clothes.gd" id="1_gb8dg"]
+[ext_resource type="Texture2D" uid="uid://327gcb5wd0bs" path="res://card_ethics.png" id="2_7ired"]
+[ext_resource type="Texture2D" uid="uid://c6bpvyt32xkit" path="res://clothes_bg.png" id="2_wxytq"]
+
+[node name="Clothes" type="Control" unique_id=139961683]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 100.0
+offset_bottom = 144.0
+focus_mode = 2
+script = ExtResource("1_gb8dg")
+
+[node name="ClothesBg" type="Sprite2D" parent="." unique_id=1474175660]
+position = Vector2(49.999992, 70.99999)
+scale = Vector2(0.146, 0.146)
+texture = ExtResource("2_wxytq")
+
+[node name="Front" type="TextureRect" parent="." unique_id=1697793440]
+layout_mode = 0
+offset_right = 686.0
+offset_bottom = 976.0
+scale = Vector2(0.146, 0.146)
+texture = ExtResource("2_7ired")

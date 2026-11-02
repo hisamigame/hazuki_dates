@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bsnlhhuu4a1ab"]
+
+[ext_resource type="Script" uid="uid://b2ctgaibrul06" path="res://dummy.gd" id="1_0umox"]
+[ext_resource type="Texture2D" uid="uid://327gcb5wd0bs" path="res://card_ethics.png" id="2_1324b"]
+
+[node name="Dummy" type="Control" unique_id=139961683]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 100.0
+offset_bottom = 144.0
+script = ExtResource("1_0umox")
+
+[node name="Front" type="TextureRect" parent="." unique_id=1697793440]
+visible = false
+layout_mode = 0
+offset_right = 686.0
+offset_bottom = 976.0
+scale = Vector2(0.146, 0.146)
+texture = ExtResource("2_1324b")
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]

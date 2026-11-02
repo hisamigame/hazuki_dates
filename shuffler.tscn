@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dlc5rinksscyb"]
+
+[ext_resource type="Script" uid="uid://cxa207sn8bcbi" path="res://shuffler.gd" id="1_5dhto"]
+[ext_resource type="Texture2D" uid="uid://ctcji7ohpfk83" path="res://shuffle.png" id="2_5dhto"]
+
+[node name="Shuffler" type="Control" unique_id=139961683]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 100.0
+offset_bottom = 144.0
+script = ExtResource("1_5dhto")
+
+[node name="Front" type="TextureRect" parent="." unique_id=1697793440]
+layout_mode = 0
+offset_right = 686.0
+offset_bottom = 686.0
+scale = Vector2(0.146, 0.146)
+texture = ExtResource("2_5dhto")
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]

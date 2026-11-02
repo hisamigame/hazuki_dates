@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cs1fge81msvq2"]
+
+[ext_resource type="Script" uid="uid://cyovqkhmd4ipo" path="res://choice_effect.gd" id="1_0lmh3"]
+
+[node name="ChoiceEffect" type="Node2D" unique_id=254521924]
+script = ExtResource("1_0lmh3")
+
+[node name="Label" type="Label" parent="." unique_id=266427776]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.5
+offset_top = -33.5
+offset_right = 13.5
+offset_bottom = 33.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1

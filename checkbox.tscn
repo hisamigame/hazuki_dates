@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cqh1j3uqmn1dp"]
+
+[ext_resource type="Script" uid="uid://c0rv6u5ed8agl" path="res://checkbox.gd" id="1_u5uen"]
+[ext_resource type="Texture2D" uid="uid://c5bd777j4lk7f" path="res://cross.png" id="2_l5hxx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5uen"]
+bg_color = Color(0, 0, 0, 0.21176471)
+
+[node name="Checkbox" type="Node2D" unique_id=641416132]
+script = ExtResource("1_u5uen")
+
+[node name="Label" type="Label" parent="." unique_id=1504721849]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_u5uen")
+text = "Phone
+Number"
+
+[node name="Stamp" type="Sprite2D" parent="." unique_id=1042500040]
+visible = false
+position = Vector2(51, 31)
+texture = ExtResource("2_l5hxx")

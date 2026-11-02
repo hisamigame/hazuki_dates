@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c714ke41g1wn1"]
+
+[ext_resource type="Script" uid="uid://t3n0ytuoo8my" path="res://plotter.gd" id="1_okcul"]
+
+[node name="Plotter" type="Control" unique_id=1524873818]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_okcul")
+
+[node name="Label" type="Label" parent="." unique_id=1645012802]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -12.0
+offset_right = 31.0
+offset_bottom = 11.0
+text = "0"
+
+[node name="Label2" type="Label" parent="." unique_id=355606413]
+layout_mode = 0
+offset_left = -37.0
+offset_top = -65.0
+offset_right = 3.0
+offset_bottom = -36.0
+text = "+100"
+
+[node name="Label3" type="Label" parent="." unique_id=44343022]
+layout_mode = 0
+offset_left = -33.0
+offset_top = 40.0
+offset_right = 7.0
+offset_bottom = 108.0
+text = "-100"
+
+[node name="Canvas" type="ColorRect" parent="." unique_id=655377364]
+clip_children = 2
+layout_mode = 0
+offset_top = -54.0
+offset_right = 544.0
+offset_bottom = 53.0
+color = Color(0, 0, 0, 0.87058824)
+
+[node name="Line2D" type="Line2D" parent="Canvas" unique_id=1579364701]
+width = 3.0
+default_color = Color(1, 0, 0, 1)

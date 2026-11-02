@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://xrq8hjye5ggb"]
+
+[ext_resource type="Material" uid="uid://12a1am70evfv" path="res://cool_material.tres" id="1_80y4e"]
+[ext_resource type="Script" uid="uid://b02y6on1ery1t" path="res://bonus_effect_2.gd" id="1_nd2r5"]
+[ext_resource type="AudioStream" uid="uid://c6ibwm7iuhtl8" path="res://applause.wav" id="3_6hon7"]
+
+[node name="BonusEffect2" type="Node2D" unique_id=1415244022]
+z_index = 2
+material = ExtResource("1_80y4e")
+script = ExtResource("1_nd2r5")
+
+[node name="Label2" type="Label" parent="." unique_id=78568149]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -565.0
+offset_top = -147.0
+offset_right = 565.0
+offset_bottom = 151.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 64
+text = "NEW DIALOGUE OPTION UNLOCKED:
+TALK ABOUT COCKROACHES"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1504721849]
+use_parent_material = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -565.0
+offset_top = -146.5
+offset_right = 565.0
+offset_bottom = 151.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "NEW DIALOGUE OPTION UNLOCKED:
+TALK ABOUT COCKROACHES"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1458422561]
+stream = ExtResource("3_6hon7")
+autoplay = true
+bus = &"SE"

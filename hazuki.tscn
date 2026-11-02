@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dnkqdmyiiabu5"]
+
+[ext_resource type="Script" uid="uid://dy0qrsm1bwjtp" path="res://hazuki.gd" id="1_ee4qw"]
+[ext_resource type="Texture2D" uid="uid://cuaylspqusxyc" path="res://hazuki0.png" id="1_mwadv"]
+[ext_resource type="Texture2D" uid="uid://dea0yjgo5hqxk" path="res://blush.png" id="3_mcjqy"]
+
+[node name="Hazuki" type="Node2D" unique_id=1576849441]
+script = ExtResource("1_ee4qw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=769107256]
+position = Vector2(383, 281)
+texture = ExtResource("1_mwadv")
+
+[node name="blush" type="Sprite2D" parent="." unique_id=1328672695]
+visible = false
+position = Vector2(383, 281)
+texture = ExtResource("3_mcjqy")

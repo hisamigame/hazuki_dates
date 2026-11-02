@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cixbodh153bq5"]
+
+[ext_resource type="Material" uid="uid://12a1am70evfv" path="res://cool_material.tres" id="1_tdujv"]
+
+[node name="CoolBG" type="ColorRect" unique_id=592172788]
+material = ExtResource("1_tdujv")
+offset_right = 416.0
+offset_bottom = 92.0

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://la2awpqs3ppg"]
+
+[ext_resource type="Script" uid="uid://bxwpl6m0gru0w" path="res://global.gd" id="1_6q3x5"]
+[ext_resource type="AudioStream" uid="uid://bk0vnd1xcp3w0" path="res://close_book_01.ogg" id="2_qxp0b"]
+[ext_resource type="AudioStream" uid="uid://cr0esonjma2hm" path="res://hotel_2_1.ogg" id="3_2wtbm"]
+[ext_resource type="AudioStream" uid="uid://b38dw0bnvvedd" path="res://crash.wav" id="4_8tbuy"]
+[ext_resource type="AudioStream" uid="uid://btrlvm10qsdje" path="res://slowed_beat.ogg" id="4_ol57v"]
+[ext_resource type="AudioStream" uid="uid://cqc6trgl07rcj" path="res://Hit_02.wav" id="5_hhif3"]
+[ext_resource type="AudioStream" uid="uid://bx3vq3fecyh3u" path="res://coin6.wav" id="6_74nqk"]
+
+[node name="Global" type="Node" unique_id=1104835393]
+script = ExtResource("1_6q3x5")
+
+[node name="Flip" type="AudioStreamPlayer" parent="." unique_id=1806321769]
+stream = ExtResource("2_qxp0b")
+bus = &"SE"
+
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=780087377]
+stream = ExtResource("3_2wtbm")
+
+[node name="BGM2" type="AudioStreamPlayer" parent="." unique_id=1191603138]
+stream = ExtResource("4_ol57v")
+
+[node name="Incorrect" type="AudioStreamPlayer" parent="." unique_id=1069069403]
+stream = ExtResource("4_8tbuy")
+bus = &"SE"
+
+[node name="Punch" type="AudioStreamPlayer" parent="." unique_id=1860572904]
+stream = ExtResource("5_hhif3")
+volume_db = -10.0
+bus = &"SE"
+
+[node name="Coin" type="AudioStreamPlayer" parent="." unique_id=522515506]
+stream = ExtResource("6_74nqk")
+bus = &"SE"

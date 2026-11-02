@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://12a1am70evfv"]
+
+[ext_resource type="Shader" uid="uid://cl5ig4syfcahv" path="res://cool_shader.gdshader" id="1_kc45e"]
+
+[resource]
+shader = ExtResource("1_kc45e")
+shader_parameter/strength = 0.5
+shader_parameter/speed = 0.5
+shader_parameter/angle = 0.0
+shader_parameter/alpha_mult = 1.0

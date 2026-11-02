@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cf41sgynyp3wq"]
+
+[ext_resource type="Texture2D" uid="uid://b04leso0t8anv" path="res://title_screen.png" id="1_ak2if"]
+[ext_resource type="Script" uid="uid://cdpcmathqadhj" path="res://title_screen.gd" id="2_ig5kc"]
+
+[node name="TitleScreen" type="TextureRect" unique_id=1329927673]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ak2if")
+script = ExtResource("2_ig5kc")

@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://cy3g2lfryhrc3"]
+
+[ext_resource type="Script" uid="uid://cv7oey54pgrn5" path="res://result_window.gd" id="1_wstaw"]
+[ext_resource type="PackedScene" uid="uid://c714ke41g1wn1" path="res://plotter.tscn" id="2_m0i6l"]
+[ext_resource type="PackedScene" uid="uid://cqh1j3uqmn1dp" path="res://checkbox.tscn" id="3_npdi8"]
+
+[node name="ResultWindow" type="Control" unique_id=1614963409]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wstaw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1194429897]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 90.0
+offset_top = 126.0
+offset_right = 954.0
+offset_bottom = 816.0
+color = Color(0, 0, 0, 0.36078432)
+
+[node name="Label" type="Label" parent="." unique_id=2123522983]
+layout_mode = 0
+offset_left = 331.0
+offset_top = 169.0
+offset_right = 690.0
+offset_bottom = 306.0
+theme_override_font_sizes/font_size = 48
+text = "RESULTS
+"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1489710398]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 266.0
+offset_right = 685.0
+offset_bottom = 403.0
+theme_override_font_sizes/font_size = 32
+text = "Tokimeki graph
+"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=379737008]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 458.0
+offset_right = 529.0
+offset_bottom = 517.0
+theme_override_font_sizes/font_size = 32
+text = "Final tokimeki="
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=1679527886]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 511.0
+offset_right = 552.0
+offset_bottom = 570.0
+theme_override_font_sizes/font_size = 32
+text = "Tokimeki time integral = "
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="." unique_id=813230354]
+layout_mode = 0
+offset_left = 486.0
+offset_top = 456.0
+offset_right = 552.0
+offset_bottom = 515.0
+theme_override_font_sizes/font_size = 32
+text = "100"
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="." unique_id=191984309]
+layout_mode = 0
+offset_left = 557.0
+offset_top = 510.0
+offset_right = 648.0
+offset_bottom = 569.0
+theme_override_font_sizes/font_size = 32
+text = "10000"
+horizontal_alignment = 1
+
+[node name="Plotter" parent="." unique_id=655377364 instance=ExtResource("2_m0i6l")]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 367.0
+offset_right = 794.0
+offset_bottom = 474.0
+
+[node name="Checkbox2" parent="." unique_id=1424482306 instance=ExtResource("3_npdi8")]
+position = Vector2(169, 629)
+text = "Birthday"
+
+[node name="Checkbox3" parent="." unique_id=1841450212 instance=ExtResource("3_npdi8")]
+position = Vector2(290, 627)
+text = "Blood
+Type"
+
+[node name="Checkbox4" parent="." unique_id=1339109443 instance=ExtResource("3_npdi8")]
+position = Vector2(414, 625)
+text = "Walk her
+Home"
+
+[node name="Checkbox5" parent="." unique_id=2079351886 instance=ExtResource("3_npdi8")]
+position = Vector2(539, 623)
+text = "Phone
+Number"
+
+[node name="Checkbox6" parent="." unique_id=641416132 instance=ExtResource("3_npdi8")]
+position = Vector2(670, 623)
+text = "B/W/H"

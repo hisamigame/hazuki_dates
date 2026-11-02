@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bksjmj6bldmgx"]
+
+[ext_resource type="Script" uid="uid://plwe01j0h5dw" path="res://card.gd" id="1_q5obu"]
+[ext_resource type="Texture2D" uid="uid://327gcb5wd0bs" path="res://card_ethics.png" id="2_e484p"]
+[ext_resource type="Texture2D" uid="uid://df3g105qrfuw5" path="res://card back purple_0.png" id="3_fpac0"]
+
+[node name="Card" type="Control" unique_id=139961683]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 100.0
+offset_bottom = 144.0
+script = ExtResource("1_q5obu")
+
+[node name="Front" type="TextureRect" parent="." unique_id=1697793440]
+layout_mode = 0
+offset_right = 686.0
+offset_bottom = 976.0
+scale = Vector2(0.146, 0.146)
+texture = ExtResource("2_e484p")
+
+[node name="Back" type="TextureRect" parent="." unique_id=800901591]
+layout_mode = 0
+offset_right = 686.0
+offset_bottom = 976.0
+scale = Vector2(0.146, 0.146)
+texture = ExtResource("3_fpac0")
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_focus_exited"]

@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://ebvdr3w822ym"]
+
+[ext_resource type="Texture2D" uid="uid://cwti2biuyfc2y" path="res://pub_bg.png" id="1_3cpf1"]
+[ext_resource type="Script" uid="uid://cf4i8nxoemnnt" path="res://pregame_window.gd" id="1_8s3dq"]
+[ext_resource type="PackedScene" uid="uid://dnkqdmyiiabu5" path="res://hazuki.tscn" id="2_8s3dq"]
+[ext_resource type="Texture2D" uid="uid://b0os287flapyk" path="res://table.png" id="3_56pho"]
+[ext_resource type="PackedScene" uid="uid://bb8l2cjwttr48" path="res://fade_in.tscn" id="5_56pho"]
+
+[node name="pregame_window" type="Node2D" unique_id=1901337084]
+script = ExtResource("1_8s3dq")
+
+[node name="BG" type="TextureRect" parent="." unique_id=2035717322]
+modulate = Color(0.6706895, 0.6706895, 0.6706895, 1)
+offset_left = -1071.0
+offset_right = 1043.0
+offset_bottom = 1024.0
+texture = ExtResource("1_3cpf1")
+
+[node name="Hazuki" parent="." unique_id=1576849441 instance=ExtResource("2_8s3dq")]
+modulate = Color(0.69965345, 0.69965345, 0.69965345, 1)
+position = Vector2(0, 220)
+
+[node name="FG" type="Sprite2D" parent="." unique_id=1561360585]
+modulate = Color(0.57700837, 0.5770084, 0.57700837, 1)
+position = Vector2(512, 516)
+texture = ExtResource("3_56pho")
+
+[node name="FadeIn" parent="FG" unique_id=846528686 instance=ExtResource("5_56pho")]
+offset_left = -512.0
+offset_top = -516.0
+offset_right = 512.0
+offset_bottom = 508.0

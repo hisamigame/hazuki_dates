@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://sex0b6acco0k"]
+
+[ext_resource type="Script" uid="uid://jdpxu4lnou2h" path="res://choice.gd" id="1_0cj1k"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvcbf"]
+bg_color = Color(0, 0, 0, 0.3372549)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0cj1k"]
+bg_color = Color(0, 0, 0, 0.6627451)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[node name="Choice" type="Label" unique_id=692670865]
+custom_minimum_size = Vector2(0, 32)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_hvcbf")
+theme_override_styles/focus = SubResource("StyleBoxFlat_0cj1k")
+script = ExtResource("1_0cj1k")

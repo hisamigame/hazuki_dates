@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://hvmq4wt3mr8p"]
+
+[ext_resource type="Script" uid="uid://3l33b40gltqg" path="res://copyright.gd" id="2_3ir17"]
+
+[sub_resource type="Gradient" id="Gradient_b50g7"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3ir17"]
+gradient = SubResource("Gradient_b50g7")
+
+[node name="Copyright" type="TextureRect" unique_id=1329927673]
+offset_right = 1046.0
+offset_bottom = 1056.0
+texture = SubResource("GradientTexture2D_3ir17")
+script = ExtResource("2_3ir17")
+
+[node name="Label" type="Label" parent="." unique_id=1189201837]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 223.0
+offset_right = 869.0
+offset_bottom = 547.0
+theme_override_font_sizes/font_size = 64
+text = "This is an unofficial
+fan game."
+horizontal_alignment = 1
